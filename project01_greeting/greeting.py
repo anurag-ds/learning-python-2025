@@ -1,0 +1,2 @@
+print("----------------------------Personalized Greeting System----------------------------")
+name, age, hobby = input("Enter your Name: "), int(input("Enter your age: ")), input("What are your Hobbies? ")
