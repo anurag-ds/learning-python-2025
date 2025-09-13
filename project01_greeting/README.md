@@ -68,7 +68,7 @@ project01_greeting/
 │
 ├── greeting.py      # Main application script
 ├── README.md        # Project documentation
-└── output.png   # Demo GIF
+└── output.png       # Demo GIF
 ```
 
 ---
