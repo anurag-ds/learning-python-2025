@@ -7,7 +7,7 @@ It uses Python’s built-in [`random`](https://docs.python.org/3/library/random.
 
 ## Demo
 
-![Sample Output](images/output.gif)
+![Sample Output](output.png)
 
 ---
 
