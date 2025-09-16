@@ -1,5 +1,7 @@
 import random
+
 def user_input():
+    # Collects user input for name, age, and hobbies
     global name
     name = input("\nEnter your Name: ")
     global age 
@@ -8,6 +10,7 @@ def user_input():
     hobby = input("\nEnter your Hobby(if more than one write by seperating them with a space) : ")
 
 def list_of_greet(age, name, hobby):
+    # Returns a list of greetings based on age group and user input
     if age >= 5 and age <= 100:
         if age >= 18:
             motivational = "Keep inspiring others with your maturity and passion!"
@@ -29,28 +32,33 @@ def list_of_greet(age, name, hobby):
                 f"\nDon't tell me your age is {age}, as it's illegal to be so good and kind! You are so generous, {name}. Just remember,\n don't lose your hobbies like {hobby},\n as that's a gem. If you have that,\n value it and stay happy! {motivational}\n"
             ]
     else:
+        # Age not in valid range, print error and return empty list
         print("\nPlease enter a valid age make sure it's greater than 4 and less than 100!")
         return []  # Will return an empty list if the constraint isn't satisfied, so that the function doesn't return 'None'
 
 def main():
+    # Main function to run the greeting logic
     user_input()
     greeting = list_of_greet(age, name, hobby)
     if not greeting:
         return # Exit the main function if the function "list_of_greet()" returns an empty list to the 'greeting' variable to avoid unexpected errors!
-    choice = random.choice(greeting)
+    choice = random.choice(greeting) # Select a random greeting from the list
     print("="*100)
     print(choice)
     print("="*100)
 
 def process():
+    # Ask user if they want to continue; returns True to exit, False to continue
     exit_choice = int(input("\nWish to Continue?(1[Yes]/0[No]) "))
     return not exit_choice
 
 while 1:
     try:
+        # Print header and run main greeting logic
         print("\n","-"*50,"Personalize Greeting System","-"*50)
         main()
-        if process(): break
+        if process(): break # Exit loop if user chooses not to continue
     except ValueError:
+        # Handle invalid age input
         print("\nPlease Enter a Valid Age!")
         if process(): break
