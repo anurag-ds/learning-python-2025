@@ -13,7 +13,6 @@ Number Guess Game is an interactive Python CLI application that challenges playe
 - **Robust Validation:** Gracefully handles invalid inputs (e.g., non-numeric or out-of-range guesses).
 - **Engaging Feedback:** Randomized, motivational messages celebrate correct guesses.
 - **Polished Terminal UI:** Clean formatting with separators for a professional experience.
-- **Modular & Extensible:** Easily add features like scoring, difficulty levels, or a GUI.
 
 ---
 
@@ -135,7 +134,6 @@ For detailed guidelines, see CONTRIBUTING.md (coming soon, for now, follow PEP 8
 **Anurag Gupta**  
 📧 askquestiontoanurag@gmail.com  
 🌐 [GitHub Profile](https://github.com/anurag-ds)  
-🐦 Twitter/X: [@anurag_ds](https://twitter.com/anurag_ds)
 
 ---
 
